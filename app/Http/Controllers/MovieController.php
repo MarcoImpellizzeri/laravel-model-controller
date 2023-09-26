@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
     public function index() {
-		return view("home");
+		$dati = Movie::all();
+
+		dd($dati);
+
+		return view('home');
 	}
 }
