@@ -20,4 +20,4 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, "index"])->name('homepage');
 
 
-Route::get("/home", [MovieController::class, "index"]);
+Route::get("/", [MovieController::class, "index"]);

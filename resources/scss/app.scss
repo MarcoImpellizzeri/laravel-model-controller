@@ -1,2 +1,9 @@
 @use 'bootstrap';
 @use "@fortawesome/fontawesome-free/css/all.min.css";
+
+@use './partials/home';
+
+body {
+    background-color: #a912cf;
+    font-family: Arial, Helvetica, sans-serif;
+}

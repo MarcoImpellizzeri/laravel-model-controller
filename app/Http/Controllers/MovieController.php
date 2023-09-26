@@ -10,8 +10,7 @@ class MovieController extends Controller
     public function index() {
 		$dati = Movie::all();
 
-		dd($dati);
 
-		return view('home');
+		return view('home', ['home' => $dati]);
 	}
 }
